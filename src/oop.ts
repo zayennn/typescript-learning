@@ -3,13 +3,11 @@ class Produk {
     nama: string
     harga: number
     stok: number
-    jumlah_beli: number
 
-    constructor(nama: string, harga: number, stok: number, jumlah_beli: number) {
+    constructor(nama: string, harga: number, stok: number) {
         this.nama = nama
         this.harga= harga
         this.stok= stok
-        this.jumlah_beli= jumlah_beli
     }
 
     tampilkanInfo() {
@@ -19,9 +17,17 @@ class Produk {
 nama                          : ${this.nama}
 harga                         : ${this.harga}
 stok                          : ${this.stok}
-${this.nama} di beli sebanyak      : ${this.jumlah_beli}
-total jumlah produk           : ${this.stok - this.jumlah_beli}  
+
 `)
+    }
+
+    beli(jumlah: number) {
+        if ( jumlah >= this.stok ) {
+            console.log(`❌ Stok ${this.nama} tidak cukup!`)
+        } else {
+            this.stok -= jumlah
+            console.log(`✅ ${this.nama} dibeli ${jumlah} unit. Sisa stok: ${this.stok}`)
+        }
     }
 }
 
