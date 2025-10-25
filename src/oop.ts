@@ -172,3 +172,7 @@ const MyAnimals: HewanPeliharaan[] = [
     new Anjing("ScoobyDo", "Anjing Ghost Hunter"),
     new Capybara("Capy King", "Chill Guy")
 ]
+
+for ( let h of MyAnimals ) {
+    h.suara()
+}
