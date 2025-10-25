@@ -124,19 +124,12 @@ hei, kur kur!!  : kur kurr kuur ~ 🐐
             `);
     }
 }
-let hewan = ["kucing", "anjing", "capybara"];
-for (let i = 0; i < hewan.length; i++) {
-    if (hewan[i] === "kucing") {
-        let mochi = new Kucing("Mochi", "Kucing Rumahan");
-        mochi.suara();
-    }
-    else if (hewan[i] === "anjing") {
-        let scoobyDo = new Anjing("ScoobyDo", "Anjing Ghost Hunter");
-        scoobyDo.suara();
-    }
-    else {
-        let capyKing = new Capybara("Capy King", "Chill Guy");
-        capyKing.suara();
-    }
+const MyAnimals = [
+    new Kucing("Mochi", "Kucing Rumahan"),
+    new Anjing("ScoobyDo", "Anjing Ghost Hunter"),
+    new Capybara("Capy King", "Chill Guy")
+];
+for (let h of MyAnimals) {
+    h.suara();
 }
 //# sourceMappingURL=oop.js.map

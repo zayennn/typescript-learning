@@ -160,7 +160,7 @@ class Capybara extends HewanPeliharaan {
 
 nama hewan ini         : ${this.nama}
 jenis hewan ini        : ${this.jenis}
-hei, kur kur!!  : kur kurr kuur ~ 🐐
+hei, kur kur!!         : kur kurr kuur ~ 🐐
             `
         )
     }
