@@ -67,4 +67,42 @@ total gaji : ${currency}
 }
 const masbro = new Manager("Masbro on a turtle", 100000000, 50000000);
 masbro.totalPendapatan();
+class HewanPeliharaan {
+    nama;
+    jenis;
+    constructor(nama, jenis) {
+        this.nama = nama;
+        this.jenis = jenis;
+    }
+}
+class Kucing extends HewanPeliharaan {
+    // constructor(nama: string, jenis: string) {
+    //     super(nama, jenis)
+    // }
+    suara() {
+        console.log(`
+========= latihan 3 =========
+
+nama hewan ini   : ${this.nama}
+jenis hewan ini  : ${this.jenis}
+hei, mengeong!!  : Meong~ 🐱
+            `);
+    }
+}
+class Anjing extends HewanPeliharaan {
+    // constructor(nama: string, jenis: string) {
+    //     super(nama, jenis)
+    // }
+    suara() {
+        console.log(`
+========= latihan 3 =========
+
+nama hewan ini         : ${this.nama}
+jenis hewan ini        : ${this.jenis}
+hei, meng gong gong!!  : Guk guk! 🐶
+            `);
+    }
+}
+let mochi = new Kucing("Mochi", "Kucing Rumahan");
+mochi.suara();
 //# sourceMappingURL=oop.js.map
