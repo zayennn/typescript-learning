@@ -32,7 +32,9 @@ stok                          : ${this.stok}
 }
 
 
-let laptop = new Produk("Tuf F15", 10000000, 100, 3)
+let laptop = new Produk("Tuf F15", 10000000, 100)
+
+laptop.beli(3)
 
 laptop.tampilkanInfo()
 

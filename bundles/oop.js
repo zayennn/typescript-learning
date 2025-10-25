@@ -5,12 +5,10 @@ class Produk {
     nama;
     harga;
     stok;
-    jumlah_beli;
-    constructor(nama, harga, stok, jumlah_beli) {
+    constructor(nama, harga, stok) {
         this.nama = nama;
         this.harga = harga;
         this.stok = stok;
-        this.jumlah_beli = jumlah_beli;
     }
     tampilkanInfo() {
         console.log(`
@@ -19,12 +17,21 @@ class Produk {
 nama                          : ${this.nama}
 harga                         : ${this.harga}
 stok                          : ${this.stok}
-${this.nama} di beli sebanyak      : ${this.jumlah_beli}
-total jumlah produk           : ${this.stok - this.jumlah_beli}  
+
 `);
     }
+    beli(jumlah) {
+        if (jumlah >= this.stok) {
+            console.log(`❌ Stok ${this.nama} tidak cukup!`);
+        }
+        else {
+            this.stok -= jumlah;
+            console.log(`✅ ${this.nama} dibeli ${jumlah} unit. Sisa stok: ${this.stok}`);
+        }
+    }
 }
-let laptop = new Produk("Tuf F15", 10000000, 100, 3);
+let laptop = new Produk("Tuf F15", 10000000, 100);
+laptop.beli(3);
 laptop.tampilkanInfo();
 // todo latihan 2
 class Karyawan {
