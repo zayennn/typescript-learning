@@ -88,3 +88,55 @@ masbro.totalPendapatan()
 
 
 // todo latihan 3
+interface SuaraHewan {
+    nama: string
+    jenis: string
+    suara(): void
+}
+
+
+abstract class HewanPeliharaan implements SuaraHewan {
+    public nama: string
+    public jenis: string
+
+    constructor(nama: string, jenis: string) {
+        this.nama = nama
+        this.jenis = jenis
+    }
+
+    abstract suara(): void
+}
+
+class Kucing extends HewanPeliharaan {
+    // constructor(nama: string, jenis: string) {
+    //     super(nama, jenis)
+    // }
+
+    suara(): void {
+        console.log(`
+========= latihan 3 =========
+
+nama hewan ini   : ${this.nama}
+jenis hewan ini  : ${this.jenis}
+hei, mengeong!!  : Meong~ 🐱
+            `
+        )
+    }
+}
+
+class Anjing extends HewanPeliharaan {
+    // constructor(nama: string, jenis: string) {
+    //     super(nama, jenis)
+    // }
+
+    suara(): void {
+        console.log(`
+========= latihan 3 =========
+
+nama hewan ini   : ${this.nama}
+jenis hewan ini  : ${this.jenis}
+hei, mengeong!!  : Guk guk! 🐶
+            `
+        )
+    }
+}
