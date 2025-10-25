@@ -6,8 +6,8 @@ class Produk {
 
     constructor(nama: string, harga: number, stok: number) {
         this.nama = nama
-        this.harga= harga
-        this.stok= stok
+        this.harga = harga
+        this.stok = stok
     }
 
     tampilkanInfo() {
@@ -22,7 +22,7 @@ stok                          : ${this.stok}
     }
 
     beli(jumlah: number) {
-        if ( jumlah >= this.stok ) {
+        if (jumlah >= this.stok) {
             console.log(`❌ Stok ${this.nama} tidak cukup!`)
         } else {
             this.stok -= jumlah
@@ -61,7 +61,7 @@ gaji : ${this.gaji}
 
 
 class Manager extends Karyawan {
-    private bonus: number 
+    private bonus: number
 
     constructor(nama: string, gaji: number, bonus: number) {
         super(nama, gaji)
@@ -167,18 +167,8 @@ hei, kur kur!!  : kur kurr kuur ~ 🐐
 }
 
 
-let hewan = ["kucing", "anjing", "capybara"]
-
-for ( let i = 0; i < hewan.length; i++ ) {
-    if ( hewan[i] === "kucing" ) {
-        let mochi = new Kucing("Mochi", "Kucing Rumahan")
-        mochi.suara()
-    } else if ( hewan[i] === "anjing" ) {
-        let scoobyDo = new Anjing("ScoobyDo", "Anjing Ghost Hunter")
-        scoobyDo.suara()
-    } else {
-        let capyKing = new Capybara("Capy King", "Chill Guy")
-        capyKing.suara()
-    }
-}
-
+const MyAnimals: HewanPeliharaan[] = [
+    new Kucing("Mochi", "Kucing Rumahan"),
+    new Anjing("ScoobyDo", "Anjing Ghost Hunter"),
+    new Capybara("Capy King", "Chill Guy")
+]
