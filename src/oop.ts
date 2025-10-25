@@ -22,7 +22,7 @@ stok                          : ${this.stok}
     }
 
     beli(jumlah: number) {
-        if (jumlah >= this.stok) {
+        if (jumlah > this.stok) {
             console.log(`❌ Stok ${this.nama} tidak cukup!`)
         } else {
             this.stok -= jumlah
@@ -160,7 +160,7 @@ class Capybara extends HewanPeliharaan {
 
 nama hewan ini         : ${this.nama}
 jenis hewan ini        : ${this.jenis}
-hei, kur kur!!         : kur kurr kuur ~ 🐐
+hei, kur kur!!         : kur kurr kuur ~ 🐹
             `
         )
     }
