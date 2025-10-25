@@ -133,10 +133,14 @@ class Anjing extends HewanPeliharaan {
         console.log(`
 ========= latihan 3 =========
 
-nama hewan ini   : ${this.nama}
-jenis hewan ini  : ${this.jenis}
-hei, mengeong!!  : Guk guk! 🐶
+nama hewan ini         : ${this.nama}
+jenis hewan ini        : ${this.jenis}
+hei, meng gong gong!!  : Guk guk! 🐶
             `
         )
     }
 }
+
+
+let mochi = new Kucing("Mochi", "Kucing Rumahan")
+mochi.suara()
