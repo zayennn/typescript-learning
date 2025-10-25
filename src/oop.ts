@@ -85,3 +85,6 @@ total gaji : ${currency}
 
 const masbro = new Manager("Masbro on a turtle", 100000000, 50000000)
 masbro.totalPendapatan()
+
+
+// todo latihan 3
