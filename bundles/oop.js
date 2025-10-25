@@ -1,33 +1,27 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class Kendaraan {
-    name;
-    color;
-    constructor(name, color) {
-        this.name = name;
-        this.color = color;
-        this.name = name;
-        this.color = color;
+class Produk {
+    nama;
+    harga;
+    stok;
+    jumlah_beli;
+    constructor(nama, harga, stok, jumlah_beli) {
+        this.nama = nama;
+        this.harga = harga;
+        this.stok = stok;
+        this.jumlah_beli = jumlah_beli;
     }
-    info() {
-        console.log(`nama : ${this.name}, warna : ${this.color}`);
-    }
-}
-class Motor extends Kendaraan {
-    top_speed;
-    constructor(name, color, top_speed) {
-        super(name, color);
-        this.top_speed = top_speed;
-        this.top_speed = top_speed;
-    }
-    info() {
-        console.log(`nama : ${this.name}, 
-warna : ${this.color}
-top speed : ${this.top_speed} km/jam`);
+    tampilkanInfo() {
+        console.log(`
+nama : ${this.nama}
+harga : ${this.harga}
+stok : ${this.stok}
+${this.nama} di beli sebanyak - ${this.jumlah_beli}
+total jumlah produk : ${this.stok - this.jumlah_beli}  
+`);
     }
 }
-let civic = new Kendaraan("Honda Civic", "Abu Abu");
-civic.info();
-let h2r = new Motor("Kawasaki Ninja H2R", "Hitam", 410);
-h2r.info();
+let laptop = new Produk("Tuf F15", 10000000, 100, 3);
+// console.log()
+laptop.tampilkanInfo();
 //# sourceMappingURL=oop.js.map
