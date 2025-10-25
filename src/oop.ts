@@ -166,7 +166,6 @@ hei, kur kur!!  : kur kurr kuur ~ 🐐
     }
 }
 
-
 const MyAnimals: HewanPeliharaan[] = [
     new Kucing("Mochi", "Kucing Rumahan"),
     new Anjing("ScoobyDo", "Anjing Ghost Hunter"),
