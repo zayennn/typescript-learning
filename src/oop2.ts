@@ -62,9 +62,14 @@ class RekeningBank {
     }
 
     checkSaldo() {
+        let currency = new Intl.NumberFormat("id-ID", {
+            style: 'currency',
+            currency: 'IDR',
+        }).format(this.saldo)
+
         console.log(`
 ======== latihan 2 ========
-total saldo anda: ${this.saldo}`)
+total saldo anda: ${currency}`)
     }
 }
 
