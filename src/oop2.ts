@@ -23,3 +23,19 @@ const tuf = new Laptop("Asus Tuf F15", 16, 1000)
 tuf.info()
 
 // todo latihan 2
+class Mahasiswa {
+    private nama: string
+    private nim: number
+
+    constructor( nama: string, nim: number ) {
+        this.nama = nama
+        this.nim = nim
+    }
+
+    belajar() {
+        console.log(`${this.nama} dengan nim ${this.nim} sedang belajar`)
+    }
+}
+
+const masbro = new Mahasiswa("masbro", 15250506)
+masbro.belajar()
