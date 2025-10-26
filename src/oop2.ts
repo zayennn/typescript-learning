@@ -77,4 +77,4 @@ const mySaldo = new RekeningBank(0)
 mySaldo.setor(100000)
 mySaldo.checkSaldo()
 
-// 
+// todo latihan 4
