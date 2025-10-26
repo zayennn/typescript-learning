@@ -4,16 +4,16 @@ class Laptop {
     private ram: number
     private ssd: number
 
-    constructor( merk: string, ram: number, ssd: number ) {
+    constructor(merk: string, ram: number, ssd: number) {
         this.merk = merk
         this.ram = ram
         this.ssd = ssd
     }
 
     info() {
-        let compileSsd = this.ssd >= 1000 
-                        ? `${this.ssd / 1000} TB`
-                        : `${this.ssd} GB` 
+        let compileSsd = this.ssd >= 1000
+            ? `${this.ssd / 1000} TB`
+            : `${this.ssd} GB`
 
         console.log(`
 ======== latihan 1 ========
@@ -29,7 +29,7 @@ class Mahasiswa {
     private nama: string
     private nim: number
 
-    constructor( nama: string, nim: number ) {
+    constructor(nama: string, nim: number) {
         this.nama = nama
         this.nim = nim
     }
@@ -49,12 +49,12 @@ masbro.belajar()
 class RekeningBank {
     private saldo: number
 
-    constructor( saldo: number ) {
+    constructor(saldo: number) {
         this.saldo = saldo
     }
 
-    setor( jumlah: number ) {
-        if ( jumlah <= 0 ) {
+    setor(jumlah: number) {
+        if (jumlah <= 0) {
             console.log('jumlah tidak boleh kurang dari 0')
         } else {
             this.saldo += jumlah
@@ -81,7 +81,7 @@ mySaldo.checkSaldo()
 class Kendaraan {
     protected merk: string
 
-    constructor( merk: string ) {
+    constructor(merk: string) {
         this.merk = merk
     }
 
@@ -105,3 +105,21 @@ H2R.ngebut()
 
 
 // todo latihan 6
+class Hewan {
+    protected nama: string
+
+    constructor(nama: string) {
+        this.nama = nama
+    }
+}
+
+class Kucing extends Hewan {
+    bersuara() {
+        console.log(`
+======== latihan 4 dan 5 ========
+${this.nama} berkata : ~ Meong`)
+    }
+}
+
+const mochi = new Kucing("Mochiaw")
+mochi.bersuara()
