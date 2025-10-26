@@ -64,7 +64,7 @@ total saldo anda: ${currency}`);
 const mySaldo = new RekeningBank(0);
 mySaldo.setor(100000);
 mySaldo.checkSaldo();
-// todo latihan 4
+// todo latihan 4 dan 5
 class Kendaraan {
     merk;
     constructor(merk) {
@@ -72,14 +72,14 @@ class Kendaraan {
     }
     jalan() {
         console.log(`
-======== latihan 4 ========
+======== latihan 4 dan 5 ========
 ${this.merk} sedang jalan di jalanan`);
     }
 }
 class Motor extends Kendaraan {
     ngebut() {
         console.log(`
-======== latihan 4 ========
+======== latihan 4 dan 5 ========
 ${this.merk} sedang ngebut di jalanan`);
     }
 }
