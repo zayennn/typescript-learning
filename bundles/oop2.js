@@ -86,4 +86,19 @@ ${this.merk} sedang ngebut di jalanan`);
 const H2R = new Motor("Kawasaki Ninja H2R");
 H2R.ngebut();
 // todo latihan 6
+class Hewan {
+    nama;
+    constructor(nama) {
+        this.nama = nama;
+    }
+}
+class Kucing extends Hewan {
+    bersuara() {
+        console.log(`
+======== latihan 4 dan 5 ========
+${this.nama} berkata : ~ Meong`);
+    }
+}
+const mochi = new Kucing("Mochiaw");
+mochi.bersuara();
 //# sourceMappingURL=oop2.js.map
