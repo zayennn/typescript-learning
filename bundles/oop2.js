@@ -37,4 +37,5 @@ ${this.nama} dengan nim ${this.nim} sedang belajar`);
 }
 const masbro = new Mahasiswa("masbro", 15250506);
 masbro.belajar();
+// todo latihan 3
 //# sourceMappingURL=oop2.js.map
