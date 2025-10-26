@@ -123,3 +123,28 @@ ${this.nama} berkata : ~ Meong`)
 
 const mochi = new Kucing("Mochiaw")
 mochi.bersuara()
+
+
+// todo latihan 7
+interface Produk {
+    nama: string,
+    harga: number,
+    infoProduk(): void
+}
+
+class Baju implements Produk {
+    public nama: string
+    public harga: number
+
+    constructor ( nama: string, harga: number ) {
+        this.nama = nama
+        this.harga = harga
+    }
+
+    infoProduk(): void {
+        console.log(`
+======== latihan 6 ========
+produk : ${this.nama}
+harga  : ${this.harga}`)
+    }
+}
