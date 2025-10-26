@@ -10,7 +10,13 @@ class Laptop {
     }
 
     info() {
-        console.log(`Laptop: ${this.merk} | ${this.ram} | ${this.ssd}`)
+        let compileSsd = this.ssd >= 1000 
+                        ? `${this.ssd / 1000} TB`
+                        : `${this.ssd} GB` 
+
+        console.log(`Laptop: ${this.merk} | ${this.ram} GB | ${compileSsd}`)
     }
 }
 
+const tuf = new Laptop("Asus Tuf F15", 16, 1000)
+tuf.info()
