@@ -16,7 +16,7 @@ class Laptop {
                         : `${this.ssd} GB` 
 
         console.log(`
-======== latihan 2 ========
+======== latihan 1 ========
 Laptop: ${this.merk} | ${this.ram} GB | ${compileSsd}`)
     }
 }
@@ -68,7 +68,7 @@ class RekeningBank {
         }).format(this.saldo)
 
         console.log(`
-======== latihan 2 ========
+======== latihan 3 ========
 total saldo anda: ${currency}`)
     }
 }

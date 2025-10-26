@@ -15,7 +15,7 @@ class Laptop {
             ? `${this.ssd / 1000} TB`
             : `${this.ssd} GB`;
         console.log(`
-======== latihan 2 ========
+======== latihan 1 ========
 Laptop: ${this.merk} | ${this.ram} GB | ${compileSsd}`);
     }
 }
@@ -57,11 +57,12 @@ class RekeningBank {
             currency: 'IDR',
         }).format(this.saldo);
         console.log(`
-======== latihan 2 ========
+======== latihan 3 ========
 total saldo anda: ${currency}`);
     }
 }
 const mySaldo = new RekeningBank(0);
 mySaldo.setor(100000);
 mySaldo.checkSaldo();
+// todo latihan 4
 //# sourceMappingURL=oop2.js.map
