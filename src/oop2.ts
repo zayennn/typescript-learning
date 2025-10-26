@@ -21,3 +21,5 @@ class Laptop {
 
 const tuf = new Laptop("Asus Tuf F15", 16, 1000)
 tuf.info()
+
+// todo latihan 2
