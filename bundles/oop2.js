@@ -95,7 +95,7 @@ class Hewan {
 class Kucing extends Hewan {
     bersuara() {
         console.log(`
-======== latihan 4 dan 5 ========
+======== latihan 6 ========
 ${this.nama} berkata : ~ Meong`);
     }
 }
