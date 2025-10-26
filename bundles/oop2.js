@@ -115,4 +115,6 @@ produk : ${this.nama}
 harga  : ${this.harga}`);
     }
 }
+const baju = new Baju("Turtle Neck", 100000);
+baju.infoProduk();
 //# sourceMappingURL=oop2.js.map
