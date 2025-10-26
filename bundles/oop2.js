@@ -38,4 +38,26 @@ ${this.nama} dengan nim ${this.nim} sedang belajar`);
 const masbro = new Mahasiswa("masbro", 15250506);
 masbro.belajar();
 // todo latihan 3
+class RekeningBank {
+    saldo;
+    constructor(saldo) {
+        this.saldo = saldo;
+    }
+    setor(jumlah) {
+        if (jumlah <= 0) {
+            console.log('jumlah tidak boleh kurang dari 0');
+        }
+        else {
+            this.saldo += jumlah;
+        }
+    }
+    checkSaldo() {
+        console.log(`
+======== latihan 2 ========
+total saldo anda: ${this.saldo}`);
+    }
+}
+const mySaldo = new RekeningBank(0);
+mySaldo.setor(100000);
+mySaldo.checkSaldo();
 //# sourceMappingURL=oop2.js.map
