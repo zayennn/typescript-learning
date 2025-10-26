@@ -78,3 +78,27 @@ mySaldo.setor(100000)
 mySaldo.checkSaldo()
 
 // todo latihan 4
+class Kendaraan {
+    protected merk: string
+
+    constructor( merk: string ) {
+        this.merk = merk
+    }
+
+    jalan() {
+        console.log(`
+======== latihan 4 ========
+${this.merk} sedang jalan di jalanan`)
+    }
+}
+
+class Motor extends Kendaraan {
+    ngebut() {
+        console.log(`
+======== latihan 4 ========
+${this.merk} sedang ngebut di jalanan`)
+    }
+}
+
+const H2R = new Motor("Kawasaki Ninja H2R")
+H2R.ngebut()
