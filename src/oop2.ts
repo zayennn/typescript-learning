@@ -15,7 +15,9 @@ class Laptop {
                         ? `${this.ssd / 1000} TB`
                         : `${this.ssd} GB` 
 
-        console.log(`Laptop: ${this.merk} | ${this.ram} GB | ${compileSsd}`)
+        console.log(`
+======== latihan 2 ========
+Laptop: ${this.merk} | ${this.ram} GB | ${compileSsd}`)
     }
 }
 
@@ -33,7 +35,9 @@ class Mahasiswa {
     }
 
     belajar() {
-        console.log(`${this.nama} dengan nim ${this.nim} sedang belajar`)
+        console.log(`
+======== latihan 2 ========
+${this.nama} dengan nim ${this.nim} sedang belajar`)
     }
 }
 
