@@ -101,4 +101,18 @@ ${this.nama} berkata : ~ Meong`);
 }
 const mochi = new Kucing("Mochiaw");
 mochi.bersuara();
+class Baju {
+    nama;
+    harga;
+    constructor(nama, harga) {
+        this.nama = nama;
+        this.harga = harga;
+    }
+    infoProduk() {
+        console.log(`
+======== latihan 6 ========
+produk : ${this.nama}
+harga  : ${this.harga}`);
+    }
+}
 //# sourceMappingURL=oop2.js.map
