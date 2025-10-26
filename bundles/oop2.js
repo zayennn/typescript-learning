@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+// todo latihan 1
 class Laptop {
     merk;
     ram;
