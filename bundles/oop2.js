@@ -85,4 +85,5 @@ ${this.merk} sedang ngebut di jalanan`);
 }
 const H2R = new Motor("Kawasaki Ninja H2R");
 H2R.ngebut();
+// todo latihan 6
 //# sourceMappingURL=oop2.js.map
