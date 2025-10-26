@@ -46,3 +46,28 @@ masbro.belajar()
 
 
 // todo latihan 3
+class RekeningBank {
+    private saldo: number
+
+    constructor( saldo: number ) {
+        this.saldo = saldo
+    }
+
+    setor( jumlah: number ) {
+        if ( jumlah <= 0 ) {
+            console.log('jumlah tidak boleh kurang dari 0')
+        } else {
+            this.saldo += jumlah
+        }
+    }
+
+    checkSaldo() {
+        console.log(`
+======== latihan 2 ========
+total saldo anda: ${this.saldo}`)
+    }
+}
+
+const mySaldo = new RekeningBank(0)
+mySaldo.setor(100000)
+mySaldo.checkSaldo()
