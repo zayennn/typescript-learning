@@ -1,3 +1,4 @@
+// todo latihan 1
 class Laptop {
     private merk: string
     private ram: number
