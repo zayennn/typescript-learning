@@ -22,3 +22,8 @@ for ( let i: number = 0; i <= 5; i++ ) {
 
 // latihan 3
 console.log('\n================= latihan 3 =================')
+for( let i:number = 0; i < 5; i++ ) {
+    for ( let j: number = 0; j < i; j++ ) {
+        console.log(j)
+    }
+}
