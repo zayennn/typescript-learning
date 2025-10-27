@@ -32,3 +32,5 @@ for( let i:number = 1; i <= 5; i++ ) {
 }
 
 
+// latihan 3
+console.log('\n================= latihan 3 =================')
