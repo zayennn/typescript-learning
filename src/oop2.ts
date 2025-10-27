@@ -143,7 +143,7 @@ class Baju implements Produk {
 
     infoProduk(): void {
         console.log(`
-======== latihan 6 ========
+======== latihan 7 ========
 produk : ${this.nama}
 harga  : ${this.harga}`)
     }
@@ -153,7 +153,6 @@ const baju = new Baju("Turtle Neck", 100000)
 baju.infoProduk()
 
 // todo latihan 8
-
 abstract class Bentuk {
     protected sisi: number
 
@@ -172,10 +171,38 @@ class Persegi extends Bentuk {
 
     luas() {
         console.log(`
-======== latihan 7 ========
+======== latihan 8 ========
 total sisi + sisi + sisi + sisi + sisi : ${this.sisi}`)
     }
 }
 
 const kotak = new Persegi(10)
 kotak.luas()
+
+
+// todo latihan 9
+abstract class Karyawan {
+    protected nama: string
+    protected status: string
+
+    constructor (nama: string, status: string) {
+        this.nama = nama
+        this.status = status
+    }
+}
+
+
+class KaryawanTetap extends Karyawan {
+    private gajiTetap: number
+
+    constructor ( nama: string, status: string, gajiTetap: number ) {
+        super(nama, status)
+        this.gajiTetap = gajiTetap
+    }
+
+    infoGajitetap() {
+                console.log(`
+======== latihan 9 ========
+`)
+    }
+}
