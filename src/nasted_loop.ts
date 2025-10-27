@@ -6,3 +6,6 @@ for ( let i: number = 1; i <= 3; i++ ) {
         console.log(`   kolom ke-${j}`)
     }
 }
+
+
+// latihan 2
