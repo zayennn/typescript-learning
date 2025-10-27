@@ -17,4 +17,6 @@ for (let i = 0; i <= 5; i++) {
     }
     console.log(stars);
 }
+// latihan 3
+console.log('\n================= latihan 3 =================');
 //# sourceMappingURL=nasted_loop.js.map
