@@ -178,3 +178,4 @@ total sisi + sisi + sisi + sisi + sisi : ${this.sisi}`)
 }
 
 const kotak = new Persegi(10)
+kotak.luas()

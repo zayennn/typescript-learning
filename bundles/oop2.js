@@ -117,4 +117,22 @@ harga  : ${this.harga}`);
 }
 const baju = new Baju("Turtle Neck", 100000);
 baju.infoProduk();
+// todo latihan 8
+class Bentuk {
+    sisi;
+    constructor(sisi) {
+        this.sisi = sisi;
+    }
+}
+class Persegi extends Bentuk {
+    constructor(sisi) {
+        super(sisi);
+    }
+    luas() {
+        console.log(`
+======== latihan 6 ========
+total sisi + sisi + sisi + sisi + sisi : ${this.sisi}`);
+    }
+}
+const kotak = new Persegi(10);
 //# sourceMappingURL=oop2.js.map
