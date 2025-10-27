@@ -172,7 +172,7 @@ class Persegi extends Bentuk {
 
     luas() {
         console.log(`
-======== latihan 6 ========
+======== latihan 7 ========
 total sisi + sisi + sisi + sisi + sisi : ${this.sisi}`)
     }
 }
