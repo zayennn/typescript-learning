@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 // latihan 1
+console.log('\n================= latihan 1 ================= \n');
 for (let i = 1; i <= 3; i++) {
     console.log(`baris ke-${i}`);
     for (let j = 1; j <= 3; j++) {
@@ -8,4 +9,12 @@ for (let i = 1; i <= 3; i++) {
     }
 }
 // latihan 2
+console.log('\n================= latihan 1 =================');
+for (let i = 0; i <= 5; i++) {
+    let stars = "";
+    for (let j = 0; j < i; j++) {
+        stars += "*";
+    }
+    console.log(stars);
+}
 //# sourceMappingURL=nasted_loop.js.map
