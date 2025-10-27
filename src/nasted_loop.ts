@@ -22,8 +22,10 @@ for ( let i: number = 0; i <= 5; i++ ) {
 
 // latihan 3
 console.log('\n================= latihan 3 =================')
-for( let i:number = 0; i < 5; i++ ) {
-    for ( let j: number = 0; j < i; j++ ) {
-        console.log(j)
+let count: number = 0
+for( let i:number = 1; i <= 5; i++ ) {
+    count++
+    for ( let j: number = 1; j <= i; j++ ) {
+        console.log(count)
     }
 }

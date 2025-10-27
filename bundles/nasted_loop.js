@@ -19,4 +19,11 @@ for (let i = 0; i <= 5; i++) {
 }
 // latihan 3
 console.log('\n================= latihan 3 =================');
+let count = 0;
+for (let i = 1; i <= 5; i++) {
+    count++;
+    for (let j = 1; j <= i; j++) {
+        console.log(count);
+    }
+}
 //# sourceMappingURL=nasted_loop.js.map
