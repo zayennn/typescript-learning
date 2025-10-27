@@ -136,7 +136,7 @@ class Baju implements Produk {
     public nama: string
     public harga: number
 
-    constructor ( nama: string, harga: number ) {
+    constructor(nama: string, harga: number) {
         this.nama = nama
         this.harga = harga
     }
@@ -151,3 +151,30 @@ harga  : ${this.harga}`)
 
 const baju = new Baju("Turtle Neck", 100000)
 baju.infoProduk()
+
+// todo latihan 8
+
+abstract class Bentuk {
+    protected sisi: number
+
+    constructor(sisi: number) {
+        this.sisi = sisi
+    }
+
+    abstract luas(): void
+}
+
+class Persegi extends Bentuk {
+
+    constructor(sisi: number) {
+        super(sisi)
+    }
+
+    luas() {
+        console.log(`
+======== latihan 6 ========
+total sisi + sisi + sisi + sisi + sisi : ${this.sisi}`)
+    }
+}
+
+const kotak = new Persegi(10)
