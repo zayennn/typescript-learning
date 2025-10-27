@@ -9,7 +9,7 @@ for (let i = 1; i <= 3; i++) {
     }
 }
 // latihan 2
-console.log('\n================= latihan 1 =================');
+console.log('\n================= latihan 2 =================');
 for (let i = 0; i <= 5; i++) {
     let stars = "";
     for (let j = 0; j < i; j++) {
