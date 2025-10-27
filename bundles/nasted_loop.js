@@ -26,4 +26,6 @@ for (let i = 1; i <= 5; i++) {
     }
     console.log(baris);
 }
+// latihan 3
+console.log('\n================= latihan 3 =================');
 //# sourceMappingURL=nasted_loop.js.map
