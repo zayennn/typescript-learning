@@ -206,3 +206,20 @@ class KaryawanTetap extends Karyawan {
 `)
     }
 }
+
+function faktorial( n: number ): any {
+    if ( n == 1 ) {
+        return n
+    } else {
+        return ( n * faktorial( n - 1 ) )
+    }
+}
+
+// @ts-ignore
+import promptSync from 'prompt-sync'
+
+let prompt = promptSync()
+
+let nilai = Number(prompt('masukan bilangan faktorial : '))
+
+console.log(`${nilai}! = ${faktorial(nilai)}`)
