@@ -1,3 +1,4 @@
+// latihan 1
 for ( let i: number = 1; i <= 3; i++ ) {
     console.log(`baris ke-${i}`)
 
