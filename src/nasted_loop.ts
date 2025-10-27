@@ -18,3 +18,7 @@ for ( let i: number = 0; i <= 5; i++ ) {
     }
     console.log(stars)
 }
+
+
+// latihan 3
+console.log('\n================= latihan 3 =================')
