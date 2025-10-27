@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 // todo latihan 1
 class Laptop {
@@ -110,7 +113,7 @@ class Baju {
     }
     infoProduk() {
         console.log(`
-======== latihan 6 ========
+======== latihan 7 ========
 produk : ${this.nama}
 harga  : ${this.harga}`);
     }
@@ -130,10 +133,44 @@ class Persegi extends Bentuk {
     }
     luas() {
         console.log(`
-======== latihan 7 ========
+======== latihan 8 ========
 total sisi + sisi + sisi + sisi + sisi : ${this.sisi}`);
     }
 }
 const kotak = new Persegi(10);
 kotak.luas();
+// todo latihan 9
+class Karyawan {
+    nama;
+    status;
+    constructor(nama, status) {
+        this.nama = nama;
+        this.status = status;
+    }
+}
+class KaryawanTetap extends Karyawan {
+    gajiTetap;
+    constructor(nama, status, gajiTetap) {
+        super(nama, status);
+        this.gajiTetap = gajiTetap;
+    }
+    infoGajitetap() {
+        console.log(`
+======== latihan 9 ========
+`);
+    }
+}
+function faktorial(n) {
+    if (n == 1) {
+        return n;
+    }
+    else {
+        return (n * faktorial(n - 1));
+    }
+}
+// @ts-ignore
+const prompt_sync_1 = __importDefault(require("prompt-sync"));
+let prompt = (0, prompt_sync_1.default)();
+let nilai = Number(prompt('masukan bilangan faktorial : '));
+console.log(`${nilai}! = ${faktorial(nilai)}`);
 //# sourceMappingURL=oop2.js.map
