@@ -7,4 +7,5 @@ for (let i = 1; i <= 3; i++) {
         console.log(`   kolom ke-${j}`);
     }
 }
+// latihan 2
 //# sourceMappingURL=nasted_loop.js.map
